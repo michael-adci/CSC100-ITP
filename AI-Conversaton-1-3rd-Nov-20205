@@ -1,0 +1,70 @@
+
+Skip to main content
+
+
+In a grade calculator, why must you check from hig
+Try GPT-5
+
+
+
+Today
+You said:
+In a grade calculator, why must you check from highest to lowest score
+Copilot said:
+Copilot
+In a grade calculator, checking from highest to lowest score is important when you're assigning letter grades or grade bands (like A, B, C, etc.) based on thresholds. Here's why:
+
+✅ Priority of Higher Grades
+If you check from lowest to highest, a student who qualifies for an A might be incorrectly assigned a B or C, because the first condition they meet (e.g., "score ≥ 50") will be applied—even though they also meet the higher thresholds.
+
+Example:
+Suppose your grading logic is:
+
+
+
+
+Python
+if score >= 50:
+    grade = "C"
+elif score >= 65:
+    grade = "B"
+elif score >= 80:
+    grade = "A"
+If a student scores 85, the program will assign a C, because score >= 50 is true, and it never checks the higher thresholds.
+
+✅ Correct Order (Highest to Lowest):
+
+
+
+Python
+if score >= 80:
+    grade = "A"
+elif score >= 65:
+    grade = "B"
+elif score >= 50:
+    grade = "C"
+Now, a score of 85 correctly gets an A, because the highest condition is checked first.
+
+Would you like a sample Python function or Excel formula that follows this logic?
+
+
+
+
+
+
+
+
+
+Show a Python function for this
+
+How to implement this in Excel?
+
+What if grades are not linear?
+
+Message Copilot
+
+
+Tools
+
+
+AI-generated content may be incorrect
